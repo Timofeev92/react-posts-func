@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    max-width: 1230px;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.posts h1 {
+    text-align: center;
+    margin: 30px 0;
+}
+.posts__sort {
+    display: flex;
+    text-align: end;
+}
+
+.posts__sort-content {
+    margin-left: auto;
+}
+.post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid teal;
+    margin-top: 15px;
+    border-radius: 30px;
+}
+.post__btns {
+    display: flex;
+}
+
+.page__wrapper {
+    display: flex;
+    margin-top: 15px;
+}
+.page {
+    padding: 10px;
+    border: 1px solid teal;
+    cursor: pointer;
+    margin: 3px;
+}
+.page__current {
+    border: 2px solid orangered;
+    font-weight: bold;
+}
+
+.navbar {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    background-color: lightgray;
+    border-radius: 0 0 10px 10px;
+}
+.navbar__links {
+    margin-left: auto;
+}
+.navbar__links--item {
+    color: teal;
+    text-decoration: none;
+    margin: 5px 20px;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+.navbar__links--item:hover {
+    color: tomato;
+}
+
+.userPage h1 {
+    text-align: center;
+}
+.userPage__title {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.aboutPage {
+    text-align: center;
+}
+.aboutPage h1 {
+    margin-top: 10px;
+}
+.add-post-btn {
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+}
+.loginPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
