@@ -13,9 +13,9 @@ const Login = () => {
     return (
         <div className="loginPage">
             <h1>LOGIN PAGE</h1>
-            <form onSubmit={login}>
-                <MyInput type="text" placeholder="Введите логин" />
-                <MyInput type="password" placeholder="Введите пароль" />
+            <form className="loginPage-form" onSubmit={login}>
+                <MyInput type="text" placeholder="Введите логин..." />
+                <MyInput type="password" placeholder="Введите пароль..." />
                 <MyButton>Войти</MyButton>
             </form>
 

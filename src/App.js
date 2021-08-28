@@ -21,10 +21,8 @@ const App = () => {
       isLoading,
     }}>
       <BrowserRouter>
-        <div className="container">
-          <Navbar />
-          <AppRouter />
-        </div>
+        <Navbar />
+        <AppRouter />
       </BrowserRouter>
     </AuthContext.Provider>
   )

@@ -12,29 +12,32 @@ const AppRouter = () => {
         return <Loader />
     }
     return (
-        isAuth
-            ?
-            <Switch>
-                {privateRoutes.map(route =>
-                    <Route
-                        key={route.path}
-                        path={route.path}
-                        component={route.component}
-                        exact={route.exact} />
-                )}
-                <Redirect to="/posts" />
-            </Switch>
-            :
-            <Switch>
-                {publicRoutes.map(route =>
-                    <Route
-                        key={route.path}
-                        path={route.path}
-                        component={route.component}
-                        exact={route.exact} />
-                )}
-                <Redirect to="/login" />
-            </Switch>
+        <div className="container">
+            {isAuth
+                ?
+                <Switch>
+                    {privateRoutes.map(route =>
+                        <Route
+                            key={route.path}
+                            path={route.path}
+                            component={route.component}
+                            exact={route.exact} />
+                    )}
+                    <Redirect to="/posts" />
+                </Switch>
+                :
+                <Switch>
+                    {publicRoutes.map(route =>
+                        <Route
+                            key={route.path}
+                            path={route.path}
+                            component={route.component}
+                            exact={route.exact} />
+                    )}
+                    <Redirect to="/login" />
+                </Switch>
+            }
+        </div>
     )
 }
 

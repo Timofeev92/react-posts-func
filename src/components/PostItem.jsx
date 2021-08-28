@@ -13,9 +13,14 @@ const PostItem = ({ number, remove, post }) => {
                 </div>
             </div>
             <div className="post__btns">
-                <MyButton onClick={() => router.push(`/posts/${post.id}`)}>
-                    открыть</MyButton>
-                <MyButton onClick={() => remove(post)}>удалить</MyButton>
+                <div className="post__btns-item">
+                    <MyButton onClick={() => router.push(`/posts/${post.id}`)}>
+                        открыть
+                    </MyButton>
+                </div>
+                <div className="post__btns-item">
+                    <MyButton onClick={() => remove(post)}>удалить</MyButton>
+                </div>
             </div>
         </div>
     )

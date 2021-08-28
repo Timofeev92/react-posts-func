@@ -13,13 +13,18 @@ const Navbar = () => {
 
     return (
         <div className="navbar">
-            {isAuth &&
-                <MyButton onClick={logout}>Выйти</MyButton>
-            }
-
-            <div className="navbar__links">
-                <Link className="navbar__links--item" to="/posts" >Posts</Link>
-                <Link className="navbar__links--item" to="/about" >About</Link>
+            <div className="container">
+                <div className="navbar__content">
+                    <div className="navbar__links">
+                        <Link className="navbar__links--item" to="/posts" >Posts</Link>
+                        <Link className="navbar__links--item" to="/about" >About</Link>
+                    </div>
+                    {isAuth &&
+                        <div>
+                            <MyButton onClick={logout}>Выйти</MyButton>
+                        </div>
+                    }
+                </div>
             </div>
         </div>
     )
