@@ -10,15 +10,11 @@ a {
     text-decoration: none;
 }
 
-/* #root {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
 .container {
     max-width: 1230px;
     padding: 0 15px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .posts h1 {
@@ -66,7 +62,6 @@ a {
     border: 2px solid orangered;
     font-weight: bold;
 }
-
 .navbar {
     height: 50px;
     display: flex;
@@ -78,9 +73,7 @@ a {
     justify-content: space-between;
     align-items: center;
 }
-.navbar__links {
-    margin-left: auto;
-}
+
 .navbar__links--item {
     color: teal;
     margin: 5px 10px;
@@ -121,8 +114,6 @@ a {
     text-align: center;
 }
 
-.loginPage-form {
-}
 @media (max-width: 480px) {
     .post {
         display: flex;

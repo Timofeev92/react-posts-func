@@ -20,7 +20,7 @@ const Navbar = () => {
                         <Link className="navbar__links--item" to="/about" >About</Link>
                     </div>
                     {isAuth &&
-                        <div>
+                        <div className="navbar__btn">
                             <MyButton onClick={logout}>Выйти</MyButton>
                         </div>
                     }
