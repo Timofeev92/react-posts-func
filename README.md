@@ -1,4 +1,4 @@
-Ссылка на GitHub Pages:
+# Ссылка на GitHub Pages:
 https://timofeev92.github.io/react-posts-func/
 
 # Getting Started with Create React App
